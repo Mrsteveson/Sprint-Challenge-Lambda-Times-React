@@ -93,7 +93,13 @@ export const cardData = [
     tab: "bootstrap",
     img: "./assets/max.jpg",
     author: "MAX GOODBOYE"
-  }
+  },
+  {
+    headline: "The Hottest New Bootstrap 4 Components Every Developer Needs to Know About",
+    tab: "bootstrap",
+    img: "./assets/max.jpg",
+    author: "Added by Patrick"
+  },
 ]
 
 export const carouselData = [
