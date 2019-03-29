@@ -8,10 +8,9 @@ PropTypes are used to assess what kind of data is being received by a prop, and 
 The primary life-cycle event, is the render method, that is needed for our components to appear on the DOM. However, we can go a step further with, ComponentDidMount, ComponentDidUpdate, and ComponentWillUnmount, these events are considered the birth, growth and death of a component within a react app. The component is called and added to the DOM through mounting, it can then be updated and changed, lastly if and when it is removed from the DOM it is unmounted.
 
 
-3. Explain the details of a Higher Order Component?
+3. Explain the details of a Higher Order Component? *************
 
-A HOC is a component that takes in another component as an argument.
-
+A HOC is a component that takes in another component as an argument and returns a new component. It is a technique used in React in order to reuse component logic through the application. 
 
 
 4. What are three different ways to style components in React? Explain some of the benefits of each.
