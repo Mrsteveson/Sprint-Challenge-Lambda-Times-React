@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { StyledTab, StyledTabActive } from './Styles';
 
 
 const Tab = props => {
@@ -23,4 +24,5 @@ const Tab = props => {
 Tab.propTypes = {
   tab: PropTypes.string
 }
+
 export default Tab;

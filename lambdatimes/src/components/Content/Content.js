@@ -5,6 +5,14 @@ import Cards from './Cards';
 
 // Importing our tab and card data. No need to change anything here.
 import { tabData, cardData } from '../../data';
+import styled from 'styled-components';
+
+const StyledContentContainer = styled.div `
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+`;
+
 
 export default class Content extends Component {
   constructor(props) {
@@ -41,12 +49,12 @@ export default class Content extends Component {
           of the items from cardData. 
         - else, it should only return those cards whose 'tab' matched this.state.selected.
     */
-    return (this.state.cards === 'all' ? this.state.cards : this.state.cards.filter(card => (card.tab === this.state.selected)));
+    return (this.state.selected === 'all' ? this.state.cards : this.state.cards.filter(card => (card.tab === this.state.selected)));
   };
 
   render() {
     return (
-      <div className="content-container">
+      <StyledContentContainer>
         {/* 
           Add 2 props to the Tabs component, 
           `selectedTab` that includes the currently selected tab
@@ -54,7 +62,7 @@ export default class Content extends Component {
         */}
         <Tabs tabs={this.state.tabs} selectedTab = {this.state.selected} selectTabHandler = {this.changeSelected} />
         <Cards cards={this.filterCards()} />
-      </div>
+      </StyledContentContainer>
     );
   }
 }

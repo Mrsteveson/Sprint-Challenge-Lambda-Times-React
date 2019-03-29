@@ -16,8 +16,8 @@ A HOC is a component that takes in another component as an argument.
 
 4. What are three different ways to style components in React? Explain some of the benefits of each.
 
-The first way is basic html/css composition.
+The first way is basic html/css composition. This method is fairly beginner friendly and allows beginner coders easy access to styling their html.
 
-The second way is using a preprocessor like Less where we could utilize Bootstrap if desired.
+The second way is using a preprocessor like Less where we could utilize Bootstrap if desired. Pre-processors let you nest your element styling to allow for greater organization and more fluid code navigation.
 
 The third way is using styled components within the React app, which allows us to style our components inside of our JavaScript files themselves, eliminating the need for css files, allowing us to further organize our projects.
